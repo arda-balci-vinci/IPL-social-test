@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupération du code
+      - name: Checkout du code
         uses: actions/checkout@v4
 
       - name: Installation de Node.js
@@ -21,5 +21,5 @@ jobs:
       - name: Installation des dépendances
         run: npm install
 
-      - name: Exécution des tests
+      - name: Lancer les tests
         run: npm test
